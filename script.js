@@ -34,20 +34,28 @@ function highlight() {
   }
   
   function reset() {
-    ingredientsList.forEach(ingredient => {
-        ingredient.classList.remove("highlight", "is-done");
-    });
     instructionsList.forEach(instruction => {
         instruction.classList.remove("is-done");
     });
   }
 
-  function ing1(){
+  function ing1() {
+    ing.classList.add("animate__animated", "animate__bounce");
+    setTimeout(() => {
+        ing.classList.remove("animate__animated", "animate__bounce");
+    }, 1000);
+}
 
-  }
-  function int1(){
-    
-  }
-  function cake1(){
-    
-  }
+function int1() {
+    int.classList.add("animate__animated", "animate__shakeX");
+    setTimeout(() => {
+        int.classList.remove("animate__animated", "animate__shakeX");
+    }, 1000);
+}
+
+function cake1() {
+    cake.classList.add("animate__animated", "animate__pulse");
+    setTimeout(() => {
+        cake.classList.remove("animate__animated", "animate__pulse");
+    }, 1000); 
+}
