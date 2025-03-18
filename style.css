@@ -45,8 +45,10 @@ ol li {
 #buts{
   display: flex;
   justify-content: space-around;
+  padding: 5px;
   
 }
 button{
   width: 90%;
+  margin: 5px;
 }
