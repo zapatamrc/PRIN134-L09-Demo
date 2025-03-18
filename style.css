@@ -42,6 +42,11 @@ ol li {
   background-color: yellow;
 }
 
-div #buts{
+#buts{
   display: flex;
+  justify-content: space-around;
+  
+}
+button{
+  width: 90%;
 }
